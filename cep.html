@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Localizar Endereço </title>
+    <link rel="stylesheet" href="cep.css">
+</head>
+
+<body>
+    <div class="back">
+        <div class="buscador">
+            <h1>Digite seu Cep</h1>
+            <label for="cep"></label>
+            <input type="text" id="cep" maxlength="8" placeholder="Digite aqui">
+            <button onclick="consultarCEP()">Consultar</button>
+    
+            <div id="resultado" class="resultado">
+                <p><strong>Endereço:</strong> <span id="logradouro"></span></p>
+                <p><strong>Bairro:</strong> <span id="bairro"></span></p>
+                <p><strong>Cidade:</strong> <span id="localidade"></span></p>
+                <p><strong>Estado:</strong> <span id="uf"></span></p>
+            </div>
+        </div>
+    </div>
+
+<script src="cep.js"></script>
+</body>
+
+</html>
