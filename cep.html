@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Localizar Endereço </title>
     <link rel="stylesheet" href="cep.css">
+	 <link rel="stylesheet" href="./src/css/botao.css" />
 </head>
 
 <body>
@@ -22,6 +23,17 @@
                 <p><strong>Bairro:</strong> <span id="bairro"></span></p>
                 <p><strong>Cidade:</strong> <span id="localidade"></span></p>
                 <p><strong>Estado:</strong> <span id="uf"></span></p>
+            </div>
+			<div id="numr" style="display:none" class="box">
+                <input
+              type="text"
+              id="numero"
+              class="modal-field"
+              placeholder="Número"
+              required
+            />
+			<br>
+			<button onclick="confirmarEndr()">Confirmar Endereco</button>
             </div>
         </div>
     </div>
